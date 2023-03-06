@@ -23,30 +23,49 @@ import json
 
 
 class Pokemon:
-  def __init__(self, nom, point_de_vie, niveau, puissance_attaque, defense, type):
+  def __init__(self, nom):
     self.__nom = nom
-    self.__point_de_vie = point_de_vie
-    self.niveau = niveau
-    self.puissance_attaque = puissance_attaque
-    self.defense = defense
-    self.type = type
-
+    self.__point_de_vie = self.get_point_de_vie()
+    self.niveau = self.get_niveau()
+    self.puissance_attaque = self.get_attaque()
+    self.defense = self.get_defense()
+    self.type = self.get_type
+    self.Id = self.get_ID()
+  def __str__(self):
+    return f"ID: {self.Id}Nom: {self.__nom}\nPoint de vie: {self.__point_de_vie}\nNiveau: {self.niveau}\nPuissance d'attaque: {self.puissance_attaque}\nDéfense: {self.defense}\nType: {self.type}"
+  def get_ID(self):
+    with open("pokedex.json", "r") as fichier:
+      pokemon = json.load(fichier)
+      return pokemon[self.__nom["ID"]]
+  def get_type(self):
+    with open("pokedex.json", "r") as fichier:
+      pokemon = json.load(fichier)
+      return pokemon[self.__nom["type"]]
+  def get_defense(self):
+    with open("pokedex.json", "r") as fichier:
+      pokemon = json.load(fichier)
+      return pokemon[self.__nom["defense"]]
   def get_nom(self):
     return self.__nom
   def get_point_de_vie(self):
-    return self.__point_de_vie
+    with open("pokedex.json", "r") as fichier:
+      pokemon = json.load(fichier)
+      return pokemon[self.__nom["pv"]]
+  def get_niveau(self):
+    with open("pokedex.json", "r") as fichier:
+      pokemon = json.load(fichier)
+      return pokemon[self.__nom["niveau"]]
+  def get_attaque(self):
+    with open("pokedex.json", "r") as fichier:
+      pokemon = json.load(fichier)
+      return pokemon[self.__nom["attaque"]]
   def set_nom(self, nom):
     self.__nom = nom
   def set_point_de_vie(self, point_de_vie):
     self.__point_de_vie = point_de_vie
-  def afficher(self):
-    print(f"Nom: {self.__nom}")
-    print(f"Point de vie: {self.__point_de_vie}")
-    print(f"Niveau: {self.niveau}")
-    print(f"Puissance d'attaque: {self.puissance_attaque}")
-    print(f"Défense: {self.defense}")
-    print(f"Type: {self.type}")
+ 
   def sauvegarder(self):
-    with open("pokemon.json", "w") as fichier:
+    with open("pokedex.json", "w") as fichier:
       json.dump(self.__dict__, fichier)
+
       
