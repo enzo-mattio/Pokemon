@@ -1,73 +1,903 @@
 {
-  "Salamèche":{
+  "Salameche":{
+    "niveau":1,
     "type":"feu",
     "attaque":52,
     "defense":43,
     "pv":39,
     "ID":1
+
   },
   "Reptincel":{
+    "niveau":16,
     "type":"feu",
     "attaque":64,
     "defense":58,
     "pv":58,
     "ID":2
+
   },
   "Dracaufeu":{
+    "niveau":36,
     "type":"feu",
     "attaque":84,
     "defense":78,
     "pv":78,
     "ID":3
+
+   
   },
   "Carapuce":{
+    "niveau":1,
     "type":"eau",
     "attaque":48,
     "defense":65,
     "pv":44,
     "ID":4
+
   },
   "Carabaffe":{
+    "niveau":16,
     "type":"eau",
     "attaque":63,
     "defense":80,
     "pv":59,
     "ID":5
+
   },
   "Tortank":{
+    "niveau":36,
     "type":"eau",
     "attaque":83,
     "defense":100,
     "pv":79,
     "ID":6
+
   },
   "Bulbizarre":{
+    "niveau":1,
     "type":"plante",
     "attaque":49,
     "defense":49,
     "pv":45,
     "ID":7
+
   },
   "Herbizarre":{
+    "niveau":16,
     "type":"plante",
     "attaque":62,
     "defense":63,
     "pv":60,
     "ID":8
+
   },
   "Florizarre":{
+    "niveau":36,
     "type":"plante",
     "attaque":82,
     "defense":83,
     "pv":80,
     "ID":9
+
   },
   "Pikachu":{
+    "niveau" :1,
     "type":"electrique",
     "attaque":55,
     "defense":40,
     "pv":35,
     "ID":10
-  }
 
+  },
+  "Raichu":{
+    "niveau":16,
+    "type":"electrique",
+    "attaque":90,
+    "defense":55,
+    "pv":60,
+    "ID":11
+
+  },
+  "Chenipan":{
+    "niveau":1,
+    "type":"insecte",
+    "attaque":30,
+    "defense":35,
+    "pv":45,
+    "ID":12
+
+  },
+  "Chrysacier":{
+    "niveau":7,
+    "type":"insecte",
+    "attaque":20,
+    "defense":55,
+    "pv":50,
+    "ID":13
+
+  },
+  "Papilusion":{
+    "niveau":10,
+    "type":"insecte",
+    "attaque":45,
+    "defense":50,
+    "pv":60,
+    "ID":14
+
+  },
+  "Aspicot":{
+    "niveau":1,
+    "type":"insecte",
+    "attaque":35,
+    "defense":30,
+    "pv":40,
+    "ID":15
+
+  },
+  "Coconfort":{
+    "niveau":7,
+    "type":"insecte",
+    "attaque":25,
+    "defense":50,
+    "pv":45,
+    "ID":16
+
+  },
+  "Dardargnan":{
+    "niveau":10,
+    "type":"insecte",
+    "attaque":90,
+    "defense":40,
+    "pv":65,
+    "ID":17
+
+  },
+  "Roucool":{
+    "niveau":1,
+    "type":"normal",
+    "attaque":45,
+    "defense":40,
+    "pv":40,
+    "ID":18
+
+  },
+  "Roucoups":{
+    "niveau":18,
+    "type":"normal",
+    "attaque":65,
+    "defense":60,
+    "pv":63,
+    "ID":19
+
+  },
+  "Roucarnage":{
+    "niveau":36,
+    "type":"normal",
+    "attaque":85,
+    "defense":80,
+    "pv":83,
+    "ID":20
+
+  },
+  "Rattata":{
+    "niveau":1,
+    "type":"normal",
+    "attaque":56,
+    "defense":35,
+    "pv":30,
+    "ID":21
+
+  },
+  "Rattatac":{
+    "niveau":20,
+    "type":"normal",
+    "attaque":81,
+    "defense":60,
+    "pv":55,
+    "ID":22
+
+  },
+  "Piafabec":{
+    "niveau":1,
+    "type":"normal",
+    "attaque":45,
+    "defense":40,
+    "pv":40,
+    "ID":23
+
+  },
+  "Rapasdepic":{
+    "niveau":18,
+    "type":"normal",
+    "attaque":65,
+    "defense":60,
+    "pv":63,
+    "ID":24
+
+  },
+  "Abo":{
+    "niveau":1,
+    "type":"normal",
+    "attaque":20,
+    "defense":15,
+    "pv":35,
+    "ID":25
+
+  },
+  "Arbok":{
+    "niveau":22,
+    "type":"normal",
+    "attaque":95,
+    "defense":70,
+    "pv":60,
+    "ID":26
+
+  },
+  "Sabelette":{
+    "niveau":1,
+    "type":"normal",
+    "attaque":60,
+    "defense":30,
+    "pv":30,
+    "ID":27
+
+  },
+  "Sablaireau":{
+    "niveau":18,
+    "type":"normal",
+    "attaque":80,
+    "defense":50,
+    "pv":50,
+    "ID":28
+
+  },
+  "Nidoran":{
+    "niveau":1,
+    "type":"poison",
+    "attaque":47,
+    "defense":52,
+    "pv":55,
+    "ID":29
+
+  },
+  "Nidorina":{
+    "niveau":16,
+    "type":"poison",
+    "attaque":62,
+    "defense":67,
+    "pv":70,
+    "ID":30
+
+  },
+  "Nidoqueen":{
+    "niveau":36,
+    "type":"poison",
+    "attaque":92,
+    "defense":87,
+    "pv":90,
+    "ID":31
+
+  },
+  "Nidorino":{
+    "niveau":16,
+    "type":"poison",
+    "attaque":72,
+    "defense":57,
+    "pv":61,
+    "ID":33
+
+  },
+  "Nidoking":{
+    "niveau":36,
+    "type":"poison",
+    "attaque":102,
+    "defense":77,
+    "pv":81,
+    "ID":34
+
+  },
+  "Mélofée":{
+    "niveau":1,
+    "type":"fée",
+    "attaque":45,
+    "defense":48,
+    "pv":70,
+    "ID":35
+
+  },
+  "Mélodelfe":{
+    "niveau":18,
+    "type":"fée",
+    "attaque":70,
+    "defense":73,
+    "pv":95,
+    "ID":36
+
+  },
+  "Goupix":{
+    "niveau":1,
+    "type":"feu",
+    "attaque":41,
+    "defense":40,
+    "pv":38,
+    "ID":37
+
+  },
+  "Feunard":{
+    "niveau":18,
+    "type":"feu",
+    "attaque":76,
+    "defense":75,
+    "pv":73,
+    "ID":38
+
+  },
+  "Rondoudou":{
+    "niveau":1,
+    "type":"normal",
+    "attaque":45,
+    "defense":20,
+    "pv":115,
+    "ID":39
+
+  },
+  "Grodoudou":{
+    "niveau":18,
+    "type":"normal",
+    "attaque":70,
+    "defense":45,
+    "pv":140,
+    "ID":40
+
+  },
+  "Nosferapti":{
+    "niveau":1,
+    "type":"poison",
+    "attaque":30,
+    "defense":35,
+    "pv":40,
+    "ID":41
+
+  },
+  "Nosferalto":{
+    "niveau":22,
+    "type":"poison",
+    "attaque":45,
+    "defense":50,
+    "pv":75,
+    "ID":42
+
+  },
+  "Mystherbe":{
+    "niveau":1,
+    "type":"plante",
+    "attaque":45,
+    "defense":48,
+    "pv":45,
+    "ID":43
+
+  },
+  "Ortide":{
+    "niveau":18,
+    "type":"plante",
+    "attaque":70,
+    "defense":73,
+    "pv":70,
+    "ID":44
+
+  },
+  "Rafflesia":{
+    "niveau":36,
+    "type":"plante",
+    "attaque":95,
+    "defense":98,
+    "pv":95,
+    "ID":45
+
+  },
+  "Paras":{
+    "niveau":1,
+    "type":"plante",
+    "attaque":70,
+    "defense":55,
+    "pv":35,
+    "ID":46
+
+  },
+  "Parasect":{
+    "niveau":24,
+    "type":"plante",
+    "attaque":95,
+    "defense":80,
+    "pv":60,
+    "ID":47
+
+  },
+  "Mimitoss":{
+    "niveau":1,
+    "type":"insecte",
+    "attaque":20,
+    "defense":55,
+    "pv":40,
+    "ID":48
+
+  },
+  "Aéromite":{
+    "niveau":12,
+    "type":"insecte",
+    "attaque":45,
+    "defense":50,
+    "pv":65,
+    "ID":49
+
+  },
+  "Taupiqueur":{
+    "niveau":1,
+    "type":"sol",
+    "attaque":45,
+    "defense":35,
+    "pv":35,
+    "ID":50
+
+  },
+  "Triopikeur":{
+    "niveau":22,
+    "type":"sol",
+    "attaque":75,
+    "defense":65,
+    "pv":55,
+    "ID":51
+
+  },
+  "Miaouss":{
+    "niveau":1,
+    "type":"normal",
+    "attaque":45,
+    "defense":35,
+    "pv":40,
+    "ID":52
+
+  },
+  "Persian":{
+    "niveau":18,
+    "type":"normal",
+    "attaque":70,
+    "defense":60,
+    "pv":65,
+    "ID":53
+
+  },
+  "Psykokwak":{
+    "niveau":1,
+    "type":"eau",
+    "attaque":48,
+    "defense":65,
+    "pv":30,
+    "ID":54
+
+  },
+  "Akwakwak":{
+    "niveau":22,
+    "type":"eau",
+    "attaque":73,
+    "defense":90,
+    "pv":55,
+    "ID":55
+
+  },
+  "Férosinge":{
+    "niveau":1,
+    "type":"combat",
+    "attaque":80,
+    "defense":35,
+    "pv":40,
+    "ID":56
+
+  },
+  "Colossinge":{
+    "niveau":22,
+    "type":"combat",
+    "attaque":105,
+    "defense":60,
+    "pv":65,
+    "ID":57
+
+  },
+  "Caninos":{
+    "niveau":1,
+    "type":"feu",
+    "attaque":60,
+    "defense":30,
+    "pv":50,
+    "ID":58
+
+  },
+  "Arcanin":{
+    "niveau":36,
+    "type":"feu",
+    "attaque":110,
+    "defense":80,
+    "pv":90,
+    "ID":59
+
+  },
+
+  "Ptitard":{
+    "niveau":1,
+    "type":"eau",
+    "attaque":40,
+    "defense":50,
+    "pv":30,
+    "ID":60
+
+  },
+  "Têtarte":{
+    "niveau":22,
+    "type":"eau",
+    "attaque":65,
+    "defense":75,
+    "pv":55,
+    "ID":61
+
+  },
+  "Tartard":{
+    "niveau":36,
+    "type":"eau",
+    "attaque":90,
+    "defense":100,
+    "pv":80,
+    "ID":62
+
+  },
+  "Abra":{
+    "niveau":1,
+    "type":"psy",
+    "attaque":20,
+    "defense":15,
+    "pv":25,
+    "ID":63
+
+  },
+  "Kadabra":{
+    "niveau":16,
+    "type":"psy",
+    "attaque":35,
+    "defense":30,
+    "pv":40,
+    "ID":64
+
+  },
+  "Alakazam":{
+    "niveau":36,
+    "type":"psy",
+    "attaque":50,
+    "defense":45,
+    "pv":55,
+    "ID":65
+
+  },
+  "Machoc":{
+    "niveau":1,
+    "type":"combat",
+    "attaque":80,
+    "defense":50,
+    "pv":70,
+    "ID":66
+
+  },
+  "Machopeur":{
+    "niveau":28,
+    "type":"combat",
+    "attaque":100,
+    "defense":70,
+    "pv":90,
+    "ID":67
+
+  },
+  "Mackogneur":{
+    "niveau":36,
+    "type":"combat",
+    "attaque":130,
+    "defense":80,
+    "pv":110,
+    "ID":68
+
+  },
+  "Chétiflor":{
+    "niveau":1,
+    "type":"plante",
+    "attaque":75,
+    "defense":35,
+    "pv":45,
+    "ID":69
+
+  },
+  "Boustiflor":{
+    "niveau":21,
+    "type":"plante",
+    "attaque":90,
+    "defense":50,
+    "pv":60,
+    "ID":70
+
+  },
+  "Empiflor":{
+    "niveau":36,
+    "type":"plante",
+    "attaque":105,
+    "defense":65,
+    "pv":75,
+    "ID":71
+
+  },
+  "Tentacool":{
+    "niveau":1,
+    "type":"eau",
+    "attaque":40,
+    "defense":35,
+    "pv":40,
+    "ID":72
+
+  },
+  "Tentacruel":{
+    "niveau":30,
+    "type":"eau",
+    "attaque":70,
+    "defense":65,
+    "pv":80,
+    "ID":73
+
+  },
+  "Racaillou":{
+    "niveau":1,
+    "type":"roche",
+    "attaque":80,
+    "defense":100,
+    "pv":40,
+    "ID":74
+
+  },
+  "Gravalanch":{
+    "niveau":25,
+    "type":"roche",
+    "attaque":95,
+    "defense":115,
+    "pv":55,
+    "ID":75
+
+  },
+  "Grolem":{
+    "niveau":40,
+    "type":"roche",
+    "attaque":120,
+    "defense":130,
+    "pv":80,
+    "ID":76
+
+  },
+  "Ponyta":{
+    "niveau":1,
+    "type":"feu",
+    "attaque":85,
+    "defense":55,
+    "pv":50,
+    "ID":77
+
+  },
+  "Galopa":{
+    "niveau":40,
+    "type":"feu",
+    "attaque":100,
+    "defense":70,
+    "pv":65,
+    "ID":78
+
+  },
+  "Ramoloss":{
+    "niveau":1,
+    "type":"eau",
+    "attaque":20,
+    "defense":65,
+    "pv":35,
+    "ID":79
+
+  },
+  "Flagadoss":{
+    "niveau":25,
+    "type":"eau",
+    "attaque":45,
+    "defense":90,
+    "pv":60,
+    "ID":80
+
+  },
+  "Magnéti":{
+    "niveau":1,
+    "type":"electrik",
+    "attaque":35,
+    "defense":70,
+    "pv":25,
+    "ID":81
+
+  },
+  "Magnéton":{
+    "niveau":25,
+    "type":"electrik",
+    "attaque":60,
+    "defense":95,
+    "pv":50,
+    "ID":82
+
+  },
+  "Canarticho":{
+    "niveau":1,
+    "type":"normal",
+    "attaque":55,
+    "defense":30,
+    "pv":35,
+    "ID":83
+
+  },
+  "Doduo":{
+    "niveau":1,
+    "type":"normal",
+    "attaque":85,
+    "defense":45,
+    "pv":35,
+    "ID":84
+
+  },
+  "Dodrio":{
+    "niveau":31,
+    "type":"normal",
+    "attaque":110,
+    "defense":70,
+    "pv":60,
+    "ID":85
+
+  },
+  "Otaria":{
+    "niveau":1,
+    "type":"eau",
+    "attaque":65,
+    "defense":45,
+    "pv":35,
+    "ID":86
+
+  },
+  "Lamantine":{
+    "niveau":32,
+    "type":"eau",
+    "attaque":85,
+    "defense":70,
+    "pv":65,
+    "ID":87
+
+  },
+  "Tadmorv":{
+    "niveau":1,
+    "type":"poison",
+    "attaque":55,
+    "defense":25,
+    "pv":30,
+    "ID":88
+
+  },
+  "Grotadmorv":{
+    "niveau":22,
+    "type":"poison",
+    "attaque":80,
+    "defense":50,
+    "pv":40,
+    "ID":89
+
+  },
+  "Kokiyas":{
+    "niveau":1,
+    "type":"plante",
+    "attaque":30,
+    "defense":30,
+    "pv":45,
+    "ID":90
+
+  },
+  "Crustabri":{
+    "niveau":23,
+    "type":"plante",
+    "attaque":105,
+    "defense":90,
+    "pv":70,
+    "ID":91
+
+  },
+  "Fantominus":{
+    "niveau":1,
+    "type":"spectre",
+    "attaque":30,
+    "defense":35,
+    "pv":30,
+    "ID":92
+
+  },
+  "Spectrum":{
+    "niveau":25,
+    "type":"spectre",
+    "attaque":45,
+    "defense":50,
+    "pv":45,
+    "ID":93
+
+  },
+  "Ectoplasma":{
+    "niveau":40,
+    "type":"spectre",
+    "attaque":70,
+    "defense":75,
+    "pv":60,
+    "ID":94
+
+  },
+  "Onix":{
+    "niveau":1,
+    "type":"roche",
+    "attaque":45,
+    "defense":160,
+    "pv":35,
+    "ID":95
+
+  },
+  "Soporifik":{
+    "niveau":1,
+    "type":"psy",
+    "attaque":15,
+    "defense":85,
+    "pv":60,
+    "ID":96
+
+  },
+  "Hypnomade":{
+    "niveau":26,
+    "type":"psy",
+    "attaque":45,
+    "defense":115,
+    "pv":85,
+    "ID":97
+
+  },
+  "Krabby":{
+    "niveau":1,
+    "type":"eau",
+    "attaque":105,
+    "defense":90,
+    "pv":30,
+    "ID":98
+
+  },
+  "Krabboss":{
+    "niveau":28,
+    "type":"eau",
+    "attaque":130,
+    "defense":115,
+    "pv":50,
+    "ID":99
+
+  },
+  "Draco":{
+    "niveau":1,
+    "type":"dragon",
+    "attaque":64,
+    "defense":45,
+    "pv":41,
+    "ID":100
+
+  },
+  "Dracolosse":{
+    "niveau":100,
+    "type":"dragon",
+    "attaque":84,
+    "defense":65,
+    "pv":61,
+    "ID":101
+  }
 }

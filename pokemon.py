@@ -18,54 +18,48 @@
 6.  Ajouter des fonctionnalités supplémentaires telles que l'ajout de nouveaux types de Pokémon, la mise à niveau des Pokémon et l'amélioration de l'interface utilisateur.'''
 
 # path: pokemon.py
-import random
+import json
 import json
 
+with open("attaques.json", "r") as fichier:
+    attaques = json.load(fichier)
+with open("type.json", "r") as fichier:
+    type = json.load(fichier)
+with open("pokedex.json", "r") as fichier:
+    pokemon = json.load(fichier)
+separator = "----------------------------------------"
 
 class Pokemon:
   def __init__(self, nom):
+
     self.__nom = nom
-    self.__point_de_vie = self.get_point_de_vie()
-    self.niveau = self.get_niveau()
-    self.puissance_attaque = self.get_attaque()
-    self.defense = self.get_defense()
-    self.type = self.get_type
-    self.Id = self.get_ID()
+    self.__point_de_vie = pokemon[self.__nom]["pv"]
+    self.puissance_attaque = pokemon[self.__nom]["attaque"]
+    self.defense = pokemon[self.__nom]["defense"]
+    self.type = pokemon[self.__nom]["type"]
+    self.Id = pokemon[self.__nom]["ID"]
+    self.niveau = pokemon[self.__nom]["niveau"]
   def __str__(self):
-    return f"ID: {self.Id}Nom: {self.__nom}\nPoint de vie: {self.__point_de_vie}\nNiveau: {self.niveau}\nPuissance d'attaque: {self.puissance_attaque}\nDéfense: {self.defense}\nType: {self.type}"
-  def get_ID(self):
-    with open("pokedex.json", "r") as fichier:
-      pokemon = json.load(fichier)
-      return pokemon[self.__nom["ID"]]
-  def get_type(self):
-    with open("pokedex.json", "r") as fichier:
-      pokemon = json.load(fichier)
-      return pokemon[self.__nom["type"]]
-  def get_defense(self):
-    with open("pokedex.json", "r") as fichier:
-      pokemon = json.load(fichier)
-      return pokemon[self.__nom["defense"]]
+    return f"ID: {self.Id} \nNom: {self.__nom}\nPoint de vie: {self.__point_de_vie}\nPuissance d'attaque: {self.puissance_attaque}\nDéfense: {self.defense}\nType: {self.type}"
+
   def get_nom(self):
     return self.__nom
+
   def get_point_de_vie(self):
-    with open("pokedex.json", "r") as fichier:
-      pokemon = json.load(fichier)
-      return pokemon[self.__nom["pv"]]
-  def get_niveau(self):
-    with open("pokedex.json", "r") as fichier:
-      pokemon = json.load(fichier)
-      return pokemon[self.__nom["niveau"]]
-  def get_attaque(self):
-    with open("pokedex.json", "r") as fichier:
-      pokemon = json.load(fichier)
-      return pokemon[self.__nom["attaque"]]
+    return self.__point_de_vie
+
   def set_nom(self, nom):
     self.__nom = nom
+
+  def get_attaques(self):
+    return attaques[self.__nom]
+
   def set_point_de_vie(self, point_de_vie):
     self.__point_de_vie = point_de_vie
- 
+
   def sauvegarder(self):
     with open("pokedex.json", "w") as fichier:
       json.dump(self.__dict__, fichier)
-
-      
+        
+  def get_type(self):
+    return self.type

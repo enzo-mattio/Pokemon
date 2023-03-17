@@ -1,0 +1,74 @@
+{
+  "normal": {
+    "faible": ["combat"],
+    "fort": []
+  },
+  "feu": {
+    "faible": ["eau", "sol", "roche"],
+    "fort": ["plante", "glace", "insecte"]
+  },
+  "eau": {
+    "faible": ["electrique", "plante"],
+    "fort": ["feu", "sol", "roche"]
+  },
+  "electrique": {
+    "faible": ["sol"],
+    "fort": ["eau", "vol"]
+  },
+  "plante": {
+    "faible": ["feu", "glace", "poison", "vol", "insecte"],
+    "fort": ["eau", "sol", "roche"]
+  },
+  "glace": {
+    "faible": ["feu", "combat", "roche", "acier"],
+    "fort": ["plante", "sol", "vol", "dragon"]
+  },
+  "combat": {
+    "faible": ["vol", "psy"],
+    "fort": ["Normal", "glace", "roche", "tenebres", "acier"]
+  },
+  "poison": {
+    "faible": ["sol", "psy"],
+    "fort": ["plante", "fee"]
+  },
+  "sol": {
+    "faible": ["eau", "plante", "glace"],
+    "fort": ["feu", "electrique", "poison", "roche", "acier"]
+  },
+  "vol": {
+    "faible": ["electrique", "glace", "roche"],
+    "fort": ["plante", "combat", "insecte"]
+  },
+  "psy": {
+    "faible": ["insecte", "spectre", "tenebres"],
+    "fort": ["combat", "poison"]
+  },
+  "insecte": {
+    "faible": ["feu", "vol", "roche"],
+    "fort": ["plante", "psy", "tenebres"]
+  },
+  "roche": {
+    "faible": ["eau", "plante", "combat", "sol", "acier"],
+    "fort": ["feu", "glace", "vol", "insecte"]
+  },
+  "spectre": {
+    "faible": ["spectre", "tenebres"],
+    "fort": ["psy", "spectre"]
+  },
+  "dragon": {
+    "faible": ["glace", "dragon"],
+    "fort": []
+  },
+  "tenebres": {
+    "faible": ["combat", "insecte", "fee"],
+    "fort": ["psy", "spectre"]
+  },
+  "acier": {
+    "faible": ["feu", "combat", "sol"],
+    "fort": ["glace", "roche", "fee"]
+  },
+  "fee": {
+    "faible": ["poison", "acier"],
+    "fort": ["combat", "dragon", "tenebres"]
+  }
+}
